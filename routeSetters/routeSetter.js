@@ -17,7 +17,7 @@ router.use('*', (req, res) => {
 });
 
 function setRoutes(app){
-    app.use(router);
+    app.use("/api/v1" ,router);
 }
 
 module.exports = setRoutes;
